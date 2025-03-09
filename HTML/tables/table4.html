@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            width: 400px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            display: grid;
+            gap: 5px;
+        }
+        
+        .box1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .box2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .box3 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        .box4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .item {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box box1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+        </div>
+        <div class="box box2">
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <div class="box box3">
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+        <div class="box box4">
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
