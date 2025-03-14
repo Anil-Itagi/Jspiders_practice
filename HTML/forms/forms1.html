@@ -9,34 +9,50 @@
 
 <body>
     <center>
+        <font color="red" size="20px">
 
-        <h1>Matrimony Form</h1>
+            <h1>Matrimony Form</h1>
+        </font>
     </center>
 
     <center>
-        <form action="">
+        <form action="" autocomplete="on">
+            <fieldset>
+                <legend>Enter details carefully</legend>
 
-            <table>
+                <table>
 
-                <tr>
-                    <td> <label for="fn">Firstname</label></td>
-                    <td><input type="text" id="fn" placeholder="Enter the Firstname"></td>
-                </tr>
-                <tr>
-                    <td> <label for="ln">Lastname</label></td>
-                    <td><input type="text" id="ln" placeholder="Enter the Lastname"></td>
-                </tr>
-                <tr>
-                    <td> <label for="pass">Password</label></td>
-                    <td><input type="password" id="pass" placeholder="Enter the Password"></td>
-                </tr>
-                <tr>
-                    <td> <label for="fn">Email</label></td>
-                    <td><input type="Email" id="fn" placeholder="Enter the Email"></td>
-                </tr>
+                    <tr>
+                        <td> <label for="fn">Firstname</label></td>
+                        <td><input type="text" id="fn" placeholder="Enter the Firstname"></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="ln">Lastname</label></td>
+                        <td><input type="text" id="ln" placeholder="Enter the Lastname" value="Itagi" autofocus readonly></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="pass">Password</label></td>
+                        <td><input type="password" id="pass" placeholder="Enter the Password" required></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email">Email</label></td>
+                        <td><input type="email" id="email" placeholder="Enter the Email"></td>
+                    </tr>
 
-            </table>
+                    <tr>
+                        <td><label for="dob">DOB</label></td>
+                        <td> <input type="date" id="dob"></td>
 
+                    </tr>
+
+                    <tr>
+                        <td><button>Submit</button></td>
+                        <td><button>Cancel</button></td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
         </form>
     </center>
 </body>
