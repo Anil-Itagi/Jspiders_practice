@@ -20,7 +20,7 @@
             <fieldset>
                 <legend>Enter details carefully</legend>
 
-                <table bgcolor="yellow">
+                <table bgcolor="yellow" cellpadding="20px">
 
                     <tr>
                         <td><label for="img">Profile</label></td>
@@ -38,7 +38,7 @@
                     </tr>
                     <tr>
                         <td> <label for="email">Email</label></td>
-                        <td><input type="email" id="email" placeholder="Enter the Email"></td>
+                        <td><input type="email" id="email" placeholder="Enter the Email" autofocus></td>
                     </tr>
 
                     <tr>
@@ -64,8 +64,35 @@
                     </tr>
 
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <label for="fruit">Fruits</label>
+
+                        </td>
+                        <td>
+                            <input list="fruits" id="fruit">
+                            <datalist id="fruits">
+                                <option value="Apple">Apple</option>
+                                <option value="Banana">Banana</option>
+                                <option value="chakota">Chakota</option>
+                                <option value="grapes">Grapes</option>
+                                <option value="papayi">Papayi</option>
+                            </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="num">Age</label></td>
+                        <td><input type="number" placeholder="Enter the age" required id="num"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="file">File</label></td>
+                        <td><input type="file" required id="file"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="hid">Enter</label></td>
+                        <td><input type="hidden" id="hid"></td>
                     </tr>
                     <tr>
                         <td><button>Submit</button></td>
