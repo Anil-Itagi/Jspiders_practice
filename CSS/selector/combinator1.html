@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div>h6 {
+            color: red;
+        }
+        
+        div>h5 {
+            color: blue;
+        }
+        
+        h5~span {
+            color: yellow;
+        }
+        
+        h5+div {
+            color: green;
+        }
+        
+        h1~h4 {
+            color: crimson;
+        }
+        
+        article+h1 {
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+
+        <div>
+            <h6>Red</h6>
+
+            <h5>Blue
+            </h5>
+
+            <span>Yellow</span>
+
+            <span>Pink</span>
+
+        </div>
+
+        <h5>Green</h5>
+
+        <div>Brown</div>
+
+
+    </article>
+
+    <h1>Marks</h1>
+    <h4>Cats</h4>
+    <h4>Dogs</h4>
+
+</body>
+
+</html>
