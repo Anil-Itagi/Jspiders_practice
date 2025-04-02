@@ -1,3 +1,5 @@
+
+package N_P_N_R;
 class Area {
     public static void area() {
         int l1 = 10;

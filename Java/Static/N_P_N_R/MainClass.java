@@ -1,3 +1,4 @@
+package N_P_N_R;
 public class MainClass {
     public static void main(String[] args) {
 

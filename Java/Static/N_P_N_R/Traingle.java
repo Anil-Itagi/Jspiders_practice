@@ -1,3 +1,4 @@
+package N_P_N_R;
 public class Traingle {
     public static void main(String[] args) {
         System.out.println("Main stats here");
