@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        #linear-gradient {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 50px;
+            left: 550px;
+            background-color: red;
+            background-image: linear-gradient(to top right, green 0%, green 50%, red 50%, red);
+        }
+        
+        #rlinear-gradient {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 350px;
+            left: 550px;
+            background-image: repeating-linear-gradient(to top left, red 0%, red 5%, yellow 5%, yellow 10%);
+        }
+        
+        #indian-flag {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            left: 50px;
+            background-image: repeating-linear-gradient(to bottom, orange 0%, orange 33.3%, white 33.3%, white 66.6%, green 66.6%, green 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 6px solid blue;
+            background-image: repeating-conic-gradient(blue 0%, blue 2.1%, white 2.1%, white 4.2%);
+        }
+        
+        #kamba {
+            width: 20px;
+            height: 500px;
+            background-color: rgb(223, 248, 82);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        
+        #stage {
+            width: 120px;
+            height: 60px;
+            background-color: chocolate;
+            position: relative;
+            top: 500px;
+            left: 0px;
+            z-index: 8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gredients</h1>
+    <div id="linear-gradient">
+
+
+    </div>
+
+    <div id="rlinear-gradient">
+
+    </div>
+    <div id="indian-flag">
+
+        <div id="circle"></div>
+        <div id="kamba"></div>
+
+    </div>
+    <div id="stage"></div>
+
+</body>
+
+</html>
