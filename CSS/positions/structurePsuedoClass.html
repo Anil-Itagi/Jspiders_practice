@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        article>#child1>h1 :first-child {
+            color: red;
+        }
+        
+        #child1>p:nth-child(odd) {
+            color: blue;
+        }
+        
+        article>#child2>h1:first-child {
+            color: rgb(206, 191, 32);
+        }
+        
+        article>h3:last-child {
+            color: green;
+        }
+        
+        article>h3 :nth-last-child(1) {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+        <div id="child1">
+
+            <h1> i am child1 of child1</h1>
+            <p>I am child2 of child1</p>
+            <p>i am child3 of child1</p>
+            <p>i am child4 of child1</p>
+
+        </div>
+        <div id="child2">
+            <h1> i am child1 of child2</h1>
+            <p>I am child2 of child2</p>
+            <p>i am child3 of child2</p>
+
+        </div>
+
+        <h3>
+            I am child3 of article
+        </h3>
+    </article>
+
+</body>
+
+</html>

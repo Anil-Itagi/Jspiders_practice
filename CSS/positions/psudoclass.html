@@ -34,7 +34,7 @@
             top: 160px;
             left: 280px;
             transition-property: all;
-            transition-duration: 5s, 5s, 5s;
+            transition-duration: 3s, 3s, 3s;
             transition-timing-function: linear;
             transition-delay: 0s, 0s, 0s;
             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrMXC1OHFk0z0mgcBGojXHn4e2Tl3I4uaxhQ&s");
@@ -43,9 +43,20 @@
         
         #hover:hover {
             background-color: blue;
-            transform: rotate(360deg);
             border-radius: 50%;
             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOG5TM1EovYcHRS_Uoi7lufuMrQ3slzfmoLg&s");
+            transform: rotate(360deg);
+            transform: scale();
+            transform: scaleX(2);
+            transform: scaleY(2);
+            transform: scale(2, 5);
+            transform: skewY(40deg);
+            transform: skewX(50deg);
+            transform: skew(40deg, 50deg);
+            transform: translateX(-200px);
+            transform: translateY(200px);
+            transform: translate(200px, 200px);
+            transform: translateX(200px) rotate( 360deg) scale(2, 2);
         }
     </style>
 </head>
