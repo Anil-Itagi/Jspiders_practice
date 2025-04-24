@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            height: 700px;
+            width: 100%;
+        }
+        
+        #container {
+            height: 600px;
+            width: 90%;
+            background-color: lightgreen;
+            display: grid;
+            grid-template-areas: "hlo hlo dog dog dog dog" "2 2 7 7 2 2 " "3 3 3 3 3 3" "4 4 6 6 4 4" "5 5 5 5 5 1";
+            row-gap: 10px;
+        }
+        
+        #grid-items1 {
+            grid-area: hlo;
+            background-color: red;
+        }
+        
+        #grid-items2 {
+            grid-area: dog;
+            background-color: rgb(0, 157, 255);
+        }
+        
+        #grid-items3 {
+            grid-area: 3;
+            background-color: rgb(138, 127, 21);
+        }
+        
+        #grid-items4 {
+            grid-area: 4;
+            background-color: rgb(255, 0, 187);
+        }
+        
+        #grid-items5 {
+            grid-area: 5;
+            background-color: red;
+        }
+        
+        #grid-items6 {
+            grid-area: 6;
+            background-color: red;
+        }
+        
+        #grid-items7 {
+            grid-area: 7;
+            background-color: red;
+        }
+        
+        .items {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flex">
+        <div id="container">
+            <div id="grid-items1" class="items">grid-boxes1</div>
+            <div id="grid-items2" class="items">grid-boxes2</div>
+            <div id="grid-items3" class="items">grid-boxes3</div>
+            <div id="grid-items4" class="items">grid-boxes4</div>
+            <div id="grid-items5" class="items">grid-boxes5</div>
+            <div id="grid-items6" class="items">grid-boxes6</div>
+            <div id="grid-items7" class="items">grid-boxes7</div>
+        </div>
+    </div>
+</body>
+
+</html>
