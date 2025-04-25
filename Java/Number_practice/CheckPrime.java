@@ -1,4 +1,4 @@
-package Java;
+package Java.Number_practice;
 
 public class CheckPrime {
     public static void main(String[] args) {
