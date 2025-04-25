@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "header header dog dog" "sidebar content dog dog";
+            gap: 10px;
+        }
+        
+        .header {
+            grid-area: header;
+            background-color: #4CAF50;
+        }
+        
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #2196F3;
+        }
+        
+        .dog {
+            grid-area: dog;
+            background-color: red;
+        }
+        
+        .content {
+            grid-area: content;
+            background-color: #f44336;
+        }
+        
+        .grid-container>div {
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="dog">dog</div>
+    </div>
+
+
+</body>
+
+</html>
