@@ -1,0 +1,48 @@
+class Tea
+{
+	void taste()
+	{
+		System.out.println("The good taste of honey and Fresh tea leaves");
+	}
+}
+class Lemon_tea extends Tea
+{
+	void ride()
+	{
+		System.out.println("Experience the taste of lemon and Cinammon binded together");
+	}
+}
+class Green_tea extends Tea
+{
+	void taste()
+	{
+		System.out.println("The essesnce of fresh tea leaves");
+	}
+}
+class Black_tea extends Tea
+{
+	void taste()
+	{
+		System.out.println("Refresh your morning with a blasting Tea");
+	}
+}
+class Stimulator
+{
+	static void veh_ride(Tea t1)
+	{
+		t1.taste();
+	}
+}
+class Main1
+{
+	public static void main(String[]args)
+	{
+		Lemon_tea l=new Lemon_tea();
+		Green_tea g=new Green_tea();
+		Black_tea b=new Black_tea();
+		Stimulator.veh_ride(l);
+		Stimulator.veh_ride(g);
+		Stimulator.veh_ride(b);
+
+	}
+}

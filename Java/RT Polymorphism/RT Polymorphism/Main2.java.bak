@@ -1,0 +1,48 @@
+class Bike
+{
+	void movie()
+	{
+		System.out.println("Book now have a good weekend");
+	}
+}
+class Bollywood extends Bike
+{
+	void movie()
+	{
+		System.out.println("Bollywood drama never ends");
+	}
+}
+class Sandalwood extends Bike
+{
+	void movie()
+	{
+		System.out.println("The never ending hits");
+	}
+}
+class Hollywood extends Bike
+{
+	void movie()
+	{
+		System.out.println("Filled with actions");
+	}
+}
+class Booking
+{
+	static void movies(Bike t1)
+	{
+		t1.movie();
+	}
+}
+class Main3
+{
+	public static void main(String[]args)
+	{
+		Sandalwood s=new Sandalwood();
+		Hollywood h=new Hollywood();
+		Bollywood b=new Bollywood();
+		Booking.movies(s);
+		Booking.movies(h);
+		Booking.movies(b);
+
+	}
+}
