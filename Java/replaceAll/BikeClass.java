@@ -30,13 +30,22 @@ class Simulator {
 
 
 public class BikeClass {
-    public static void main(String[] args) {
-        Java j1 = new Java();
-        Pulser p1 = new Pulser();
-        BMW b1 = new BMW();
 
-        Simulator.veh_sound(b1);
-        Simulator.veh_sound(p1);
-        Simulator.veh_sound(j1);
+    BikeClass() {
+        say();
+    }
+
+    public static void say() {
+        System.out.println("hi");
+    }
+
+    public static void main(String[] args) {
+        // Java j1 = new Java();
+        // Pulser p1 = new Pulser();
+        // BMW b1 = new BMW();
+
+        // Simulator.veh_sound(b1);
+        // Simulator.veh_sound(p1);
+        // Simulator.veh_sound(j1);
     }
 }
